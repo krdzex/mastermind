@@ -1,0 +1,94 @@
+.board {
+  margin-top: 15px;
+}
+
+.row {
+  display: block;
+  border: 1px solid #D0CACD;
+  margin: 0 auto 3px auto;
+  max-width: 360px;
+}
+
+.colors .colorHolder, .peg {
+  width: 40px;
+  height: 40px;
+  border-radius: 21px;
+  display: inline-block;
+  border: 1px solid #777;
+  margin-right: 8px;
+  border-radius: 21px;
+  cursor: pointer;
+  background-color: #F0EAED;
+  vertical-align: middle;
+  margin-bottom: 7px;
+}
+
+.rules p {
+  text-align: justify;
+  text-align-last: center;
+  margin: 5px 1em;
+  font-size: 0.92em;
+  color: #666;
+}
+
+.rules h3 {
+  text-align: center;
+  margin: 5px 1em;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.rules h1 {
+  text-align: center;
+  margin: 5px 1em;
+  font-style: normal;
+}
+
+.rules {
+  width: 362px;
+  margin: 0.33em auto 0.8em auto;
+}
+
+.chack {
+  display: inline-block;
+  color: #CCC0C6;
+  cursor: pointer;
+  padding: 16px 0;
+}
+
+.colors .red {
+  background-color: red;
+}
+
+.colors .green {
+  background-color: green;
+}
+
+.colors .blue {
+  background-color: blue;
+}
+
+.colors .yellow {
+  background-color: yellow;
+}
+
+.colors .purple {
+  background-color: purple;
+}
+
+.colors {
+  text-align: center;
+}
+
+.colors .active {
+  border: 2px solid black;
+}
+
+.board .row.active {
+  border: 2px solid #BBAAAA;
+  background-color: #FFF9FC;
+}
+
+body {
+  background-color: #E2DADD;
+}
