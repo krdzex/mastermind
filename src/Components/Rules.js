@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 
 const Rules = () => {
     const [showRules, setShowRules] = useState(false);
-    const rulesShowHide = showRules ? "Show rules" : "Hide rules";
+    const rulesShowHide = showRules ? "Hide rules" : "Show rules";
 
     const showRulesParagraph = () => {
-        if (rulesShowHide === "Show rules") {
+        if (rulesShowHide === "Hide rules") {
             setShowRules(false);
         } else {
             setShowRules(true);
