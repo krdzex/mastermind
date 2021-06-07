@@ -6,10 +6,10 @@
   display: block;
   border: 1px solid #D0CACD;
   margin: 0 auto 3px auto;
-  max-width: 360px;
+  max-width: 370px;
 }
 
-.colors .colorHolder, .peg {
+.colors .colorHolder, .peg, .correctPeg {
   width: 40px;
   height: 40px;
   border-radius: 21px;
@@ -56,23 +56,23 @@
   padding: 16px 0;
 }
 
-.colors .red {
+.colors .red, .endGame .red {
   background-color: red;
 }
 
-.colors .green {
+.colors .green, .endGame .green {
   background-color: green;
 }
 
-.colors .blue {
+.colors .blue, .endGame .blue {
   background-color: blue;
 }
 
-.colors .yellow {
+.colors .yellow, .endGame .yellow {
   background-color: yellow;
 }
 
-.colors .purple {
+.colors .purple, .endGame .purple {
   background-color: purple;
 }
 
@@ -91,4 +91,31 @@
 
 body {
   background-color: #E2DADD;
+}
+
+.squere {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  display: inline-block;
+  background-color: white;
+  margin-left: 5px;
+}
+
+.squers {
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.squere.\32 {
+  background-color: green;
+}
+
+.squere.\31 {
+  background-color: yellow;
+}
+
+.endGame {
+  text-align: center;
 }

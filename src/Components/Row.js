@@ -8,7 +8,7 @@ const Row = (props) => {
     }
 
     let active = "";
-    if (props.id === props.activeRow) {
+    if (props.id === props.activeRow && props.win === false) {
         active = "active"
     }
 
@@ -18,7 +18,12 @@ const Row = (props) => {
             <div style={props.canChack === true && props.id === props.activeRow ? { color: "green" } : {}} className={"chack"} onClick={props.checkClick}>
                 check
             </div>
-        </div>
+            <div className={"squers " + active}>
+                {props.hints.map((hint, id) => (
+                    <div className="squere" key={id} id={hint}></div>
+                ))}
+            </div>
+        </div >
 
     );
 };
